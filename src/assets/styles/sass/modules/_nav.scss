@@ -1,0 +1,21 @@
+.logo {
+	img {
+		display: none; //hide it for now
+	}
+}
+
+nav {
+	li {
+		display: inline-block;
+		list-style-type: none;
+	}
+}
+
+.main_navigation {
+	display: flex;
+	justify-content: space-between;
+
+	nav {
+		
+	}
+}

@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: 1em auto;
+	width: 90%;
+}
+
+.flex-rows {
+	display: -webkit-flex;
+	-webkit-align-content: stretch;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	align-content: stretch;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	article {
+		-webkit-flex-basis: 33%;
+		flex-basis: 33%;
+		padding: 0 1em;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+
+		iframe {
+			width: 100%;
+		}
+	}
+}
+
+
+.clearfix {
+	clear: both;
+}
